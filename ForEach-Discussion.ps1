@@ -3,11 +3,11 @@
 #Foundations of using a "Foreach" loop
 
 #Foreach (Condition) {Statement Block "Doing Part"}
-Foreach ($Item in $Items){Statement Block}
+#-Foreach ($Item in $Items){Statement Block}
 
 $ProcessList = "Notepad","Charmap","mspaintlove"
 $ProcessList
-Start-Sleep -Seconds 2
+Start-Sleep -Seconds 5
 clear
 
 foreach ($ProcessItem in $ProcessList){
@@ -28,7 +28,7 @@ foreach ($ProcessItem in $ProcessList){
 
 
 # Exercise 1 from About_foreach
-$letterArray = "a","b","c","d"
+$letterArray = "a","B","c","D"
 foreach ($letter in $letterArray)
 {
   Write-Host $letter
@@ -43,7 +43,7 @@ foreach ($letter in $letterArray)
 }
 
 # Exercise 1 based on About_foreach
-$letterArray = 1,2,3
+$letterArray = 1,2,3,4,5
 foreach ($letter in $letterArray){
   Write-Host $letter
   Pause
